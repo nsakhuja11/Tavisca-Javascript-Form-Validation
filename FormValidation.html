@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="formvalidation.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="container">
+			<form name="myForm" action="./success.html" onsubmit="return validate()" method="post">
+				<label><sup>*</sup> First Name : </label><input class="box" type="text" id="fname"><p id="Fname"></p><br>
+				<label> Last Name : </label><input class="box" type="text" id="lname"><p id="Lname"></p><br>
+				<label><sup>*</sup> Phone Number : </label><input class="box" type="text" id="phnumber"><p id="num"></p><br>
+				<label><sup>*</sup> E-mail : </label><input class="box" type="text" id="email"><br>(e.g. : abc@xyz.com)<p id="mail"></p><br>
+				<label> Address : </label><textarea class="box" id="address"></textarea><br><br>
+				<label> City : </label>
+					<select class="box" id="city">
+						<option>Select</option>
+						<option>Mumbai</option>
+						<option>Pune</option>
+						<option>Banglore</option>
+						<option>Hydrabad</option>
+						<option>Delhi</option>
+						<option>Other</option>
+					</select><br><br>
+				<label><sup>*</sup> Gender : </label>
+					<input type="radio" value="Male" name="gender" id="male"/> Male
+					<input type="radio" value="Female" name="gender" id="female"/> Female
+					<input type="radio" value="Trans" name="gender" id="trans"/> Trans
+					<p id="check"></p><br>
+				<input class="box" type="submit" value="Submit">
+				<br><br>
+				<input class="box" type="reset" value="Reset">
+			</form>
+		</div>
+	</body>
+	<script src="formvalidation.js"></script>
+</html>
